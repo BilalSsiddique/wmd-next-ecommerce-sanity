@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Sora } from "next/font/google";
-import Navbar from "src/components/Navbar.tsx";
+import Navbar from "../components/Navbar";
 
 const sora = Sora({
   subsets: ["latin"],
