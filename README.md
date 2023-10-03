@@ -12,7 +12,7 @@ A fully functional Ecommerce web app developed using Next.js | React.js| Sanity 
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/fa188fee-048e-4a48-82a5-43efc4b85e3b)
 ## Small Screen
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/79282bdf-f5d3-441d-850c-51a24201488d)
-## Product on Home Page => using Slider (auto)
+## Product on Home Page 
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/0bcb089e-5bb4-464a-ad13-6ef4cdb7b242)
 ## Responsive
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/cebe3dcf-d6b6-44f1-a55f-37aa0a31f1fe)
