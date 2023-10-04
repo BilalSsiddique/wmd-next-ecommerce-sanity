@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const DifferentFromOthers = () => {
   return (
-    <div className="flex flex-col w-full ">
+    <div className="flex flex-col w-full overflow-hidden">
       {/* Heading */}
       <div className="flex relative top-12 justify-start lg:justify-center xl:justify-end mx-5 sm:mx-auto sm:w-5/6 ">
         <h2 className="font-bold text-4xl  sm:text-5xl w-full lg:w-4/5 xl:w-[45%] ">
@@ -14,11 +14,11 @@ const DifferentFromOthers = () => {
       </div>
 
       {/* section */}
-      <div className="bg-[#fbfcff] shadow-inner py-20">
-        <div className="xl:flex   h-full gap-x-20  mx-5 sm:mx-auto sm:w-5/6">
+      <div className="bg-[#fbfcff] overflow-hidden shadow-inner py-20">
+        <div className="xl:flex overflow-hidden  h-full gap-x-20  mx-5 sm:mx-auto sm:w-5/6">
           {/* Text */}
-          <div className="relative flex justify-between gap-x-5 lg:gap-x-10 flex-1 mb-10 sm:mb-0 ">
-            <div className="absolute font-extrabold h-full md:leading-[115px] text-8xl z-10 text-[#212121] opacity-[0.07]">
+          <div className="relative overflow-hidden flex justify-between gap-x-5 lg:gap-x-10 flex-1 mb-10 sm:mb-0 ">
+            <div className="absolute overflow-hidden font-extrabold h-full md:leading-[115px] text-8xl z-10 text-[#212121] opacity-[0.07]">
               Different from others
             </div>
             <div className="space-y-12 sm:h-[300px]">

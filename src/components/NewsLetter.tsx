@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const NewsLetter = () => {
   return (
-    <div className="relative space-y-5 w-fit mx-auto px-5 sm:px-10">
+    <div className="relative space-y-5  w-fit mx-auto px-5 sm:px-10 overflow-hidden sm:overflow-visible">
       <h2 className=" font-bold text-xl sm:text-3xl md:text-4xl 2xl:text-5xl text-[#212121] ">
         <div className="text-5xl sm:text-6xl md:text-9xl pointer-events-none absolute left-0 right-0  flex justify-center items-center font-extrabold h-full md:leading-[115px]  z-10 text-[#212121] opacity-[0.05]">
           Newsletter

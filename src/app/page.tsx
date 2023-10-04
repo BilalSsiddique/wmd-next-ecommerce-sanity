@@ -13,7 +13,6 @@ export default function Home() {
       <Products />
       <DifferentFromOthers />
       <NewsLetter/>
-      <Footer/>
     </main>
   );
 }

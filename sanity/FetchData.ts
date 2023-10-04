@@ -18,7 +18,6 @@ export const getProductSlug = async () => {
 
 // Fetch all products for displaying at Home page
 export const getProductDataHome = async () => {
-  console.log("get called");
   const res = await client.fetch(
     `*[_type == "product"] | order(_createdAt asc) { _id,title,price,image,slug,productType->{productType}}`
   );

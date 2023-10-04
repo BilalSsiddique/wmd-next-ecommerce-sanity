@@ -107,7 +107,7 @@ const Navbar = () => {
               setSelectedPage={setSelectedPage}
             />
             <LinkC
-              page="All Products"
+              page="products"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -128,7 +128,10 @@ const Navbar = () => {
               />
             </div>
 
-            <Link href='/cart' className="bg-gray-200 relative h-10 w-10 p-1 flex justify-center items-center rounded-full ">
+            <Link
+              href="/cart"
+              className="bg-gray-200 relative h-10 w-10 p-1 flex justify-center items-center rounded-full "
+            >
               <Image
                 className=""
                 src={cart}
@@ -136,8 +139,12 @@ const Navbar = () => {
                 height={25}
                 alt="cart icon"
               />
-              <p className={`absolute ${loading && 'animate-pulse'} flex justify-center items-center  bg-red-500 text-white top-0 right-0 h-5 w-5 text-[12px] rounded-full`}>
-                {!loading && cartItems }
+              <p
+                className={`absolute ${
+                  loading && "animate-pulse"
+                } flex justify-center items-center  bg-red-500 text-white top-0 right-0 h-5 w-5 text-[12px] rounded-full`}
+              >
+                {!loading && cartItems}
               </p>
             </Link>
             <ClerkLoaded>
@@ -193,6 +200,25 @@ const Navbar = () => {
 
             {/* MENU ITEMS */}
             <div className="font-outfit flex flex-col gap-9 justify-center items-center  text-[20px] ">
+              <Link
+                href="/cart"
+                className="bg-gray-200 relative h-10 w-10 p-1 flex justify-center items-center rounded-full "
+              >
+                <Image
+                  className=""
+                  src={cart}
+                  width={23}
+                  height={23}
+                  alt="cart icon"
+                />
+                <p
+                  className={`absolute ${
+                    loading && "animate-pulse"
+                  } flex justify-center items-center  bg-red-500 text-white top-0 right-0 h-5 w-5 text-[12px] rounded-full`}
+                >
+                  {!loading && cartItems}
+                </p>
+              </Link>
               <LinkC
                 page="Female"
                 selectedPage={selectedPage}
@@ -215,7 +241,7 @@ const Navbar = () => {
                 setIsMenuToggled={setIsMenuToggled}
               />
               <LinkC
-                page="All Products"
+                page="products"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
                 isMenuToggled={isMenuToggled}
