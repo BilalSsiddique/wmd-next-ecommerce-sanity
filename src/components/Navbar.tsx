@@ -140,25 +140,6 @@ const Navbar = () => {
                 {!loading && cartItems }
               </p>
             </Link>
-            {/* {!userId ? (
-              <div className="gap-1 flex">
-                <Link
-                  className="p-2 text-sm  rounded-full bg-gray-200"
-                  href="sign-up"
-                >
-                  <HiOutlineUserPlus size={20} />
-                </Link>
-                <Link
-                  className="p-2  text-sm  rounded-full bg-gray-200"
-                  href="sign-in"
-                >
-                  <TbLogin size={20} />
-                </Link>
-              </div>
-            ) : (
-              <UserButton afterSignOutUrl="/" />
-            )} */}
-
             <ClerkLoaded>
               <SignedIn>
                 {isSignedIn == true ? (
