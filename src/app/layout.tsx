@@ -1,6 +1,9 @@
 import "./globals.css";
 import { Sora } from "next/font/google";
 import Navbar from "../components/Navbar";
+import { ClerkProvider } from "@clerk/nextjs";
+import { DineMarketContextProvider } from "./context/DineContext";
+import Footer from "@/components/Footer";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -18,15 +21,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${sora.className} overflow-x-hidden bg-white`}>
-        <div className="flex min-h-screen flex-col">
-          <Navbar />
-          <div className="mt-14  py-4 md:mt-[88px] md:py-6 lg:mt-[110px]">
-            {children}
-          </div>
-        </div>
-      </body>
-    </html>
+    <ClerkProvider>
+      <DineMarketContextProvider>
+        <html lang="en">
+          <body className={`${sora.className} overflow-x-hidden bg-white`}>
+            <div className="flex  min-h-screen flex-col">
+              <Navbar />
+              <div className="flex justify-center mt-14  py-4 md:mt-[88px] md:py-6 lg:mt-[110px]">
+                {children}
+              </div>
+              <Footer/>
+            </div>
+          </body>
+        </html>
+      </DineMarketContextProvider>
+    </ClerkProvider>
   );
 }

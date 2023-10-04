@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className=" ">
       <div className="grid  lg:gap-0 gap-10 grid-cols-[repeat(auto-fill,minmax(240px,1fr))]  lg:grid-cols-[2fr,1fr,1fr,1fr] mx-5 sm:mx-auto sm:w-5/6 mb-[88px] lg:mb-[110px]">
-        <div className="flex gap-y-7 flex-col items-start">
+        <div className="flex gap-y-7 w-full flex-col items-start">
           <Link href="/">
             <Image src={logo} width={180} height={30} alt="logo" />
           </Link>
@@ -18,7 +18,7 @@ const Footer = () => {
             Small, artisan label that offers a thoughtfully curated collection
             of high quality everyday essentials made.
           </p>
-          <div className="flex justify-start gap-x-5">
+          <div className="flex justify-start w-full gap-x-5">
             <p className="bg-[#f1f1f1] px-3 py-3 rounded-lg">
               <AiOutlineTwitter size={25} className=" " />
             </p>

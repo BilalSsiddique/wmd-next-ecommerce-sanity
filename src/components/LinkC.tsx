@@ -1,3 +1,4 @@
+"use-client";
 import React from "react";
 import Link from "next/link";
 
@@ -21,14 +22,14 @@ const LinkC = ({
     }
   }
 
-  console.log(selectedPage, page);
+
   return (
     <Link
-      className={`  sm:text-[16px] ${
+      className={`  text-sm ${
         selectedPage === page ? "text-[#0062f5] " : ""
       }
         hover:text-yellow transition duration-500`}
-      href={`/#${page}`}
+      href={`/${page}`}
       onClick={setPageAndToggle}
     >
       {page}
@@ -36,4 +37,4 @@ const LinkC = ({
   );
 };
 
-export default LinkC;
+export default React.memo(LinkC);

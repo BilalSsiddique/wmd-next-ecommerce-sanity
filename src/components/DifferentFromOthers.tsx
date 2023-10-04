@@ -1,20 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import different from '../../public/different.png'
+import different from "../../public/different.png";
 import Link from "next/link";
 
 const DifferentFromOthers = () => {
   return (
     <div className="flex flex-col w-full ">
       {/* Heading */}
-      <div className="flex justify-start lg:justify-center xl:justify-end mx-5 sm:mx-auto sm:w-5/6 ">
+      <div className="flex relative top-12 justify-start lg:justify-center xl:justify-end mx-5 sm:mx-auto sm:w-5/6 ">
         <h2 className="font-bold text-4xl  sm:text-5xl w-full lg:w-4/5 xl:w-[45%] ">
           Unique and Authentic Vintage Designer Jewellery
         </h2>
       </div>
 
       {/* section */}
-      <div className="bg-[#fbfcff] py-10">
+      <div className="bg-[#fbfcff] shadow-inner py-20">
         <div className="xl:flex   h-full gap-x-20  mx-5 sm:mx-auto sm:w-5/6">
           {/* Text */}
           <div className="relative flex justify-between gap-x-5 lg:gap-x-10 flex-1 mb-10 sm:mb-0 ">
@@ -75,7 +75,7 @@ const DifferentFromOthers = () => {
                 undyed and 100% traceable.
               </p>
               <Link href={"/products"} className="cursor-pointer">
-                <button className="shadow-inherit border-custom  w-fit py-2 px-16 sm:py-2 sm:px-10  lg:py-3 lg:text-lg font-bold   bg-[#212121] text-white text-sm sm:text-base">
+                <button className="border-custom justify-center flex items-center shadow-inner flex-row-reverse gap-x-2 w-fit  py-2 px-4 rounded-md bg-[#212121] text-white text-base">
                   See All Product
                 </button>
               </Link>

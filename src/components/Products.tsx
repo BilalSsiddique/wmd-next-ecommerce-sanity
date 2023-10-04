@@ -1,13 +1,8 @@
-"use client";
 import { client } from "@/lib/sanityClient";
 import ProductCardHome from "./ProductCardHome";
 import { urlForImage } from "../../sanity/lib/image";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, A11y, Autoplay } from "swiper";
+// import { PreviewSuspense } from "next-sanity/preview";
 
 export interface Products {
   _id: string;
@@ -38,54 +33,20 @@ async function Products() {
       <h1 className="text-[#212121] font-bold mt-4 text-xl sm:text-4xl">
         Check What We Have
       </h1>
-      <div className=" xl:gap-0 place-items-center  w-full flex mt-10">
-        <Swiper
-        
-          spaceBetween={0}
-          slidesPerView={3}
-          autoplay
-          modules={[Navigation, A11y, Autoplay]}
-          breakpoints={{
-            100: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            // width >= 300
-            300: {
-              slidesPerView: 1,
-              spaceBetween: 100,
-            },
-            600: {
-              slidesPerView: 2,
-              spaceBetween: 0,
-            },
-            // width >= 1000
-            1000: {
-              slidesPerView: 2,
-              spaceBetween: 0,
-            },
-            // width >= 1260
-            1260: {
-              slidesPerView: 3,
-              spaceBetween: 0,
-            },
-          }}
-        >
-          {Array.isArray(data) &&
-            data.map((productDATA: Products) => (
-              <SwiperSlide key={productDATA._id}>
-                <ProductCardHome
-                  swidth="340px"
-                  mwidth="380px"
-                  title={productDATA.title}
-                  price={productDATA.price}
-                  image={urlForImage(productDATA.image[0]).url()}
-                  _id={productDATA._id}
-                  slug={productDATA.slug}
-                />
-              </SwiperSlide>
+      <div className=" xl:gap-0 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))]  w-full  mt-10">
+        {Array.isArray(data) &&
+          data
+            .slice(0, 3)
+            .map((productDATA: Products) => (
+              <ProductCardHome
+                key={productDATA._id}
+                title={productDATA.title}
+                price={productDATA.price}
+                image={urlForImage(productDATA.image[0]).url()}
+                _id={productDATA._id}
+                slug={productDATA.slug}
+              />
             ))}
-        </Swiper>
       </div>
     </div>
   );

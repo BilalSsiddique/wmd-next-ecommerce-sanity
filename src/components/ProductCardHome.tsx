@@ -4,8 +4,6 @@ import Link from "next/link";
 
 
 interface IProductCardHome {
-  mwidth?: string;
-  swidth?:string;
   _id: string;
   title: string;
   price: number;
@@ -17,12 +15,12 @@ interface IProductCardHome {
   productType?:string;
 }
 
-const ProductCardHome: React.FC<IProductCardHome> = ({slug,title,price,image,mwidth,swidth,category,productType}) => {
+const ProductCardHome: React.FC<IProductCardHome> = ({slug,title,price,image,category,productType}) => {
   return (
-    <div className={`  sm:w-[${swidth}] md:w-[${mwidth}] cursor-move  mb-10`}>
+    <div className={`   w-full  mb-10`}>
       <Link className="" href={`/products/${slug.current}`}>
         <Image
-          priority
+          priority={true}
           className="object-cover "
           src={image}
           alt={title}
