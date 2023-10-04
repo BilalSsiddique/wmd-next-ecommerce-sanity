@@ -12,15 +12,12 @@ A fully functional Ecommerce web app developed using Next.js | React.js| Sanity 
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/fa188fee-048e-4a48-82a5-43efc4b85e3b)
 ## Small Screen
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/79282bdf-f5d3-441d-850c-51a24201488d)
-## Product on Home Page => using Slider (auto)
+## Product on Home Page 
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/0bcb089e-5bb4-464a-ad13-6ef4cdb7b242)
 ## Responsive
 ![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/cebe3dcf-d6b6-44f1-a55f-37aa0a31f1fe)
 
 ![Dine Market - Google Chrome 2023-08-07 00-01-59](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/b5556baa-3618-498b-8d30-3e53e29b5c77)
-
-## /products Page
-![image](https://github.com/BilalSsiddique/wmd-next-ecommerce-sanity/assets/64930024/a5e3fe70-bca2-4f8c-acdb-aa7931eb5c78)
 
 
 ## Sanity Dashboard - for adding products
