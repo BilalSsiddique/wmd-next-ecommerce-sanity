@@ -21,7 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+    >
       <DineMarketContextProvider>
         <html lang="en">
           <body className={`${sora.className} overflow-x-hidden bg-white`}>
@@ -30,7 +32,7 @@ export default function RootLayout({
               <div className="flex justify-center mt-14  py-4 md:mt-[88px] md:py-6 lg:mt-[110px]">
                 {children}
               </div>
-              <Footer/>
+              <Footer />
             </div>
           </body>
         </html>
