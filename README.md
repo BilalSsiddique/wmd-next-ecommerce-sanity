@@ -1,6 +1,6 @@
 # wmd-next-ecommerce-sanity
 A fully functional Ecommerce web app developed using Next.js | React.js| Sanity | Tailwind CSS | Stripe | Postgress | Drizzle | React-hot-toast | &amp; more 
-# Live Coming Soon -  
+# Live : https://wmd-next-ecommerce-sanity.vercel.app/
 
 # Front-end 
 
