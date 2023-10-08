@@ -200,6 +200,27 @@ const Navbar = () => {
 
             {/* MENU ITEMS */}
             <div className="font-outfit flex flex-col gap-9 justify-center items-center  text-[20px] ">
+              <ClerkLoaded>
+                <SignedIn>
+                  {isSignedIn == true ? (
+                    <div>
+                      <UserButton afterSignOutUrl="/" />
+                    </div>
+                  ) : (
+                    <p>Loading...</p>
+                  )}
+                </SignedIn>
+
+                <SignedOut>
+                  <SignInButton mode="modal" redirectUrl={pathname}>
+                    <button className="flex items-center justify-center ">
+                      <div className="p-2  text-sm  rounded-full bg-gray-200">
+                        <IoLogIn size={25} />
+                      </div>
+                    </button>
+                  </SignInButton>
+                </SignedOut>
+              </ClerkLoaded>
               <Link
                 href="/cart"
                 className="bg-gray-200 relative h-10 w-10 p-1 flex justify-center items-center rounded-full "
